@@ -41,7 +41,7 @@
 .logo-lefting {
 	transition: 0.5s;
 	height: 45px;
-	width: 200px;
+	width: 300px;
 	float: left;
 }
 .navbar-static-distance {

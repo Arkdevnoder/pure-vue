@@ -11,13 +11,14 @@
 	}
 	body {
 		margin: 0px;
+		font-family: arial;
 	}
 	.close:not(.content, .logo-lefting, .bg) {
-		transform: translateX(-200px);
+		transform: translateX(-300px);
 	}
 	.content {
 		box-sizing: border-box;
-		padding-left: 200px;
+		padding-left: 300px;
 		transition: 0.5s;
 	}
 	.content.close {

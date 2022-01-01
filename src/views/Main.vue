@@ -1,15 +1,20 @@
 <template>
 	<navbar></navbar>
-	<h1>Main</h1>
+	<rightbar></rightbar>
+	<div>
+		<h1>Main</h1>
+	</div>
 </template>
 <style>
 
 </style>
 <script>
 	import navbar from '../components/navbar.vue';
+	import rightbar from '../components/rightbar.vue';
 	export default {
 		components: {
-			navbar
+			navbar,
+			rightbar
 		}
 	}
 </script>
