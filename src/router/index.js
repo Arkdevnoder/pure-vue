@@ -9,10 +9,20 @@ const routes = [
 		component: Main
 	},
 	{
-		path: '/test',
-		name: 'Test',
-		component: () => import('../views/Test.vue')
+		path: '/swaps',
+		name: 'Swaps',
+		component: () => import('../views/Swaps.vue')
 	},
+	{
+		path: '/crowdfunding',
+		name: 'Crowdfunding',
+		component: () => import('../views/Crowdfunding.vue')
+	},
+	{
+		path: '/news',
+		name: 'News',
+		component: () => import('../views/News.vue')
+	}
 ]
 
 const router = createRouter({

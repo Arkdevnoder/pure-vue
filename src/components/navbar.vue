@@ -4,6 +4,7 @@
 		<div class="navbar__menu" @click="this.$root.leftbar();">
 			<i class="bi bi-list"></i>
 		</div>
+		<slot></slot>
 	</div>
 	<div class="navbar-static-distance"></div>
 </template>
@@ -15,6 +16,7 @@
 	position: fixed;
 	height: 45px;
 	width: 100%;
+	z-index: 4;
 	background: #0F4FA8;
 }
 .navbar__menu {

@@ -1,17 +1,33 @@
 <template>
-  <div class="rightbar"></div>
+  <div class="rightbar" :class="{close: this.$root.isCloseRightBar}">
+    <div class="rightbar-uppings"></div>
+  </div>
 </template>
 
 <script>
 </script>
 
 <style scoped>
+  .rightbar-uppings {
+    width: 100%;
+    height: 45px;
+  }
   .rightbar {
+    transition: 0.3s;
     position: fixed;
     width: 400px;
-    height: calc(100% - 45px);
-    top: 45px;
+    height: 100%;
+    top: 0px;
     right: 0px;
-    background: rgba(0,0,0,0.05);
+    z-index: 3;
+    background: #eeeeee;
+  }
+  .rightbar.close {
+    transform: translateX(400px);
+  }
+  @media (max-width:  1500px){
+    .rightbar {
+      z-index: 7;
+    }
   }
 </style>
