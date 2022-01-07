@@ -11,10 +11,19 @@
 					<div class="chat__input-action">
 						<i class="bi bi-paperclip"></i>
 					</div>
-					<textarea class="chat__input-text"></textarea>
+					<textarea class="chat__input-text" placeholder="Поле для сообщения"></textarea>
+					<div class="chat__input-send">
+						<i class="bi bi-caret-right"></i>
+					</div>
 				</div>
 			</div>
 			<div class="chat__right-bottom" :class="{hide: this.$root.isCloseRightBar}"></div>
+		</div>
+		<div class="chat__container">
+			<div class="chat__sender">
+			</div>
+			<div class="chat__receiver">
+			</div>
 		</div>
 	</div>
 </template>
@@ -59,14 +68,28 @@
 		height: 45px;
 		width: 45px;
 		text-align: center;
-		font-size: 25px;
+		font-size: 20px;
+		line-height: 45px;
+		color: #557;
+	}
+	.chat__input-send {
+		float: left;
+		height: 45px;
+		width: 43px;
+		text-align: center;
+		font-size: 20px;
 		line-height: 45px;
 		color: #557;
 	}
 	.chat__input-text {
-		height: calc(100% - 7.9px);
+		min-height: 45px;
 		width: calc(100% - 95px);
 		float: left;
+		line-height: 45px;
+		padding: 0px;
+		border: none;
+		outline: none;
+		display: block;
 	}
 	@media (max-width: 1500px){
 		.chat__right-bottom {
